@@ -1,0 +1,36 @@
+#inp{
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#btn{
+    color: wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: darkgreen;
+    margin: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+li{
+    margin-top: 10px;
+}
+
+li a{
+    color: green;
+}
+
+html{
+    min-width: 400px;
+}
