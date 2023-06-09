@@ -1,4 +1,5 @@
 let bt = document.getElementById("btn");
+let bt1 = document.getElementById("btn1");
 let text = document.getElementById("inp");
 let savedElems = document.getElementById("savedEl");
 // let leads = [];
@@ -18,5 +19,11 @@ const render = () => {
 
 bt.addEventListener("click", () => {
     render();
+});
+
+bt1.addEventListener("click", () => {
+    localStorage.clear();
+    leads = [];
+    savedElems.innerHTML = "";
 });
 
