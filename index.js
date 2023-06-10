@@ -34,8 +34,10 @@ bt1.addEventListener("click", () => {
 });
 
 bt2.addEventListener("click", () => {
-    leads.push(tabs[0].url);
-    localStorage.setItem("myLeads", JSON.stringify(leads));
-    savedElems.innerHTML += `<li>
-    <a target = "_blank" href = "${leads[leads.length - 1]}">${leads[leads.length - 1]}</a></li>`;
+    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+        leads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(leads));
+        savedElems.innerHTML += `<li>
+        <a target = "_blank" href = "${leads[leads.length - 1]}">${leads[leads.length - 1]}</a></li>`;
+    });    
 });
